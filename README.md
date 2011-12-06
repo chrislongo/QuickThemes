@@ -1,6 +1,6 @@
 # Info
 
-Super+Alt+0: Cycle up
+Super+Alt+0: Cycle up  
 Super+Alt+9: Cycle down
 
 Best to configure it to match your environments in:
