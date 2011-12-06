@@ -18,6 +18,11 @@
     //     "Packages/Color Scheme - Default/Mac Classic.tmTheme"
     // ]
 
+    // Below will cycle through all default themes but this plugin works best w
+    // with two or three themes.  
+
+    // I use a muted, high contrast, and bright theme to match my environments.
+
     "quick_themes": [
         "Packages/Color Scheme - Default/All Hallow's Eve.tmTheme", 
         "Packages/Color Scheme - Default/Amy.tmTheme", 
