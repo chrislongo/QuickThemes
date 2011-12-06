@@ -1,12 +1,15 @@
 {
     // This is the list of themes you want to cycle through.
+
     // You should leave this list alone and setup your own in the user
     // settings via:
     
     // Preferences -> Package Settings -> QuickThemes -> Settings - User
 
     // Remember when adding themes from your user package dir to add the 
-    // full path and file name.  Example:
+    // relative path and file name.  
+
+    // Example:
 
     // "quick_themes":
     // [
