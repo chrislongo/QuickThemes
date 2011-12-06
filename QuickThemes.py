@@ -28,6 +28,7 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
             index = 0
 
         base_settings.set("color_scheme", themes[index])
+        sublime.save_settings("Base File.sublime-settings")
 
         try:
             match = re.search("([^/]+).tmTheme|.sublime-theme$", themes[index])
@@ -37,5 +38,3 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
                 sublime.status_message(theme_name)
         except:
             pass
-
-        sublime.save_settings("Base File.sublime-settings")
