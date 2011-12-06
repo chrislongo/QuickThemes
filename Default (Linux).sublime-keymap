@@ -1,0 +1,4 @@
+[
+    { "keys": ["super+alt+0"], "command": "quick_themes", "args": {"action": "inc"}},
+    { "keys": ["super+alt+9"], "command": "quick_themes", "args": {"action": "dec"}}
+]
