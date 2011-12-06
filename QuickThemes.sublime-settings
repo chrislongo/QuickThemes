@@ -1,8 +1,8 @@
 {
     // This is the list of themes you want to cycle through.
 
-    // You should leave this list alone and setup your own in the user
-    // settings via:
+    // You should leave this version of the  list alone and setup your own in
+    // the user settings file via:
     
     // Preferences -> Package Settings -> QuickThemes -> Settings - User
 
@@ -18,7 +18,7 @@
     //     "Packages/Color Scheme - Default/Mac Classic.tmTheme"
     // ]
 
-    // Below will cycle through all default themes but this plugin works best w
+    // Below will cycle through all default themes but this plugin works best
     // with two or three themes.  
 
     // I use a muted, high contrast, and bright theme to match my environments.
