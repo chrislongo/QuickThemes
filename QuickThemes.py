@@ -12,7 +12,7 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
         current_theme = base_settings.get("color_scheme")
         themes = settings.get("quick_themes")
 
-        try:
+        if current_theme in themes:
             index = themes.index(current_theme)
 
             if action == "inc":
@@ -23,18 +23,14 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
                 index -= 1
                 if index < 0:
                     index = len(themes) - 1
-
-        except ValueError:
+        else:
             index = 0
 
         base_settings.set("color_scheme", themes[index])
         sublime.save_settings("Base File.sublime-settings")
 
-        try:
-            match = re.search("([^/]+).tmTheme|.sublime-theme$", themes[index])
-            theme_name = match.group(1)
+        match = re.search("([^/]+).tmTheme|.sublime-theme$", themes[index])
 
-            if theme_name:
-                sublime.status_message(theme_name)
-        except:
-            pass
+        if match:
+            theme_name = match.group(1)
+            sublime.status_message(theme_name)
