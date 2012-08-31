@@ -18,7 +18,13 @@ My config:
 
 I use a muted, high contrast, and bright theme to match my environments.
 
-#Install 
+# Install 
+
+## Easy Way
+
+[Install via Package Control](http://wbond.net/sublime_packages/package_control)
+
+## Hard Way
 
 1. Change to Sublime Text packages folder:  
 
