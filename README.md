@@ -26,14 +26,14 @@ I use a muted, high contrast, and bright theme to match my environments.
 
 ### Hard Way
 
-1. Change to Sublime Text packages folder:  
+* Change to Sublime Text packages folder:  
 
-    * **OS:** "~/Libary/Application Support/Sublime Text 2/Packages/User"
-    * **Windows:** "%APPDATA%\Sublime Text 2\Packages\User"
-    * **Linux:** "~/.config/sublime-text-2/Packages/User"
+    * OS X `~/Libary/Application Support/Sublime Text 2/Packages/User`  
+    * Windows `%APPDATA%\Sublime Text 2\Packages\User`  
+    * Linux `~/.config/sublime-text-2/Packages/User`  
 
-2. Run the command:
+* Run the command:
 
     `git://github.com/chrislongo/QuickThemes.git`
 
-3. Set up your favorite themes to cycle through (see Info section above).
+* Set up your favorite themes to cycle through (see Info section above).
