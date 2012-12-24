@@ -1,0 +1,16 @@
+[
+    {
+        "caption": "QuickThemes: next",
+        "command": "quick_themes", "args":
+        {
+            "action": "inc"
+        }
+    },
+    {
+        "caption": "QuickThemes: previous",
+        "command": "quick_themes", "args":
+        {
+            "action": "dec"
+        }
+    }
+]
