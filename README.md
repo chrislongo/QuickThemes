@@ -28,7 +28,7 @@ I use a muted, high contrast, and bright theme to match my environments.
 
 * Change to Sublime Text packages folder:  
 
-    * OS X `~/Libary/Application Support/Sublime Text 2/Packages/User`  
+    * OS X `~/Library/Application Support/Sublime Text 2/Packages/User`  
     * Windows `%APPDATA%\Sublime Text 2\Packages\User`  
     * Linux `~/.config/sublime-text-2/Packages/User`  
 
