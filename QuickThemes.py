@@ -52,7 +52,6 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
                 qt_selection = len(qt_themes) - 1
         
         writeable_settings = dict(qt_defaults, **qt_themes[qt_selection])
-        print(type(writeable_settings))
         for option in writeable_settings:
             full_settings.set(option, writeable_settings[option])
         
@@ -62,4 +61,4 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
         sublime.save_settings(__name__ + '.sublime-settings')
         sublime.save_settings("Base File.sublime-settings")
 
-        sublime.status_message("QuickThemes: at theme index " + str(qt_selection))
+        sublime.status_message("QuickThemes: theme index is now " + str(qt_selection))
