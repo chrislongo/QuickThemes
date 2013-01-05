@@ -15,7 +15,7 @@ Best to configure it to match your environments in:
 
 `Preferences -> Package Settings -> QuickThemes -> Settings - User`
 
-Any preference you want to change must be included in the "quick_theme_defaults"  section. Any preference not explicitly changed in a theme group will use the default. In the example below, the first theme (#0) has no settings; in effect, it is identical to the defaults. The second theme (#1) does not include a "font_size" parameter, so it will use the default font_size (12).
+Any preference you want to change must be included in the "quick_theme_defaults"  section. Any preference not explicitly changed in a theme group will use the default. In the example below, the first group (#0) makes no changes; it simply makes the defaults available. The second group (#1) does not include a "font_size" preference, so it will use the default font_size of 12.
 
 ### Example
 
