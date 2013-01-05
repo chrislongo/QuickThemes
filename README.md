@@ -21,7 +21,7 @@ Example configuration with two modes to harmonize with ambient light:
         },
         "quick_themes":
         [
-            {},
+            {}, // use defaults
             {
                 "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
                 "font_face": "Source Code Pro"
