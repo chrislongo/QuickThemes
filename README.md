@@ -1,18 +1,28 @@
 # Info
 
+QuickThemes allows you to easily cycle through any combination of Sublime Text 2 preferences. The obvious use is for changing color schemes, themes, and fonts simultaneously, but any of the ST2 preferences are available.
+
+# Usage
+
 Super+Alt+0: Cycle up
 Super+Alt+9: Cycle down
 
 Alternatively, you can switch themes via Super+Shift+P and fuzzy search, e.g. "Super+Shift+P qtn" for next theme, "Super+Shift+P qtp" for previous theme.
 
+# Configuration
+
 Best to configure it to match your environments in:
 
 `Preferences -> Package Settings -> QuickThemes -> Settings - User`
 
-Example configuration with two modes to harmonize with ambient light:
+Any preference you want to change must be included in the "quick_theme_defaults"  section. Any preference not explicitly changed in a theme group will use the default. In the example below, the first theme (#0) has no settings; in effect, it is identical to the defaults. The second theme (#1) does not include a "font_size" parameter, so it will use the default font_size (12).
+
+### Example
+
+Two modes to harmonize with ambient light:
 
     {
-        "quick_themes_selection": 1,
+        "quick_themes_selection": 0,
         "quick_themes_defaults":
         {
             "color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
