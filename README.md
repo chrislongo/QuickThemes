@@ -4,7 +4,7 @@ QuickThemes allows you to easily cycle through any combination of Sublime Text 2
 
 # Usage
 
-Super+Alt+0: Cycle up
+Super+Alt+0: Cycle up  
 Super+Alt+9: Cycle down
 
 Alternatively, you can switch themes via Super+Shift+P and fuzzy search, e.g. "Super+Shift+P qtn" for next theme, "Super+Shift+P qtp" for previous theme.
@@ -55,8 +55,7 @@ Two modes to harmonize with ambient light:
     * Windows `%APPDATA%\Sublime Text 2\Packages\User`
     * Linux `~/.config/sublime-text-2/Packages/User`
 
-* Run the command:
-
+* Run the command:  
     `git://github.com/chrislongo/QuickThemes.git`
 
 * Set up your favorite themes to cycle through (see Info section above).
