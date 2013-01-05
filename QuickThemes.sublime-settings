@@ -6,45 +6,95 @@
     
     // Preferences -> Package Settings -> QuickThemes -> Settings - User
 
-    // Remember when adding themes from your user package dir to add the 
-    // relative path and file name.  
-
-    // Example:
-
-    // "quick_themes":
-    // [
-    //     "Packages/User/Theme - Tomorrow Night/Tomorrow-Night.tmTheme",
-    //     "Packages/User/Theme - Tomorrow Night/Tomorrow-Night-Bright.tmTheme",
-    //     "Packages/Color Scheme - Default/Mac Classic.tmTheme"
-    // ]
+    // Remember when adding color schemes from your user package dir to add the 
+    // relative path and file name.
 
     // Below will cycle through all default themes but this plugin works best
-    // with two or three themes.  
+    // with two or three themes.
 
     // I use a muted, high contrast, and bright theme to match my environments.
-
+    
+    // quick_themes_selection:
+    //  The index of the currently selected theme.
+    "quick_themes_selection": 0,
+    
+    // quick_themes_defaults:
+    //  QuickThemes will check this list for default settings if a theme
+    //  does not explicitly include them. QuickThemes will not modify
+    //  settings that are not included in this list (i.e. every desired
+    //  setting must have a default value, or it will be ignored.)
+    "quick_themes_defaults": {
+        "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+        "font_face": "Menlo",
+        "font_size": 12
+    },
+    
+    // quick_themes:
+    //  List of themes. The empty first theme provides access to defaults.
     "quick_themes": [
-        "Packages/Color Scheme - Default/All Hallow's Eve.tmTheme", 
-        "Packages/Color Scheme - Default/Amy.tmTheme", 
-        "Packages/Color Scheme - Default/Blackboard.tmTheme", 
-        "Packages/Color Scheme - Default/Cobalt.tmTheme", 
-        "Packages/Color Scheme - Default/Dawn.tmTheme", 
-        "Packages/Color Scheme - Default/Eiffel.tmTheme", 
-        "Packages/Color Scheme - Default/Espresso Libre.tmTheme", 
-        "Packages/Color Scheme - Default/IDLE.tmTheme", 
-        "Packages/Color Scheme - Default/LAZY.tmTheme", 
-        "Packages/Color Scheme - Default/Mac Classic.tmTheme", 
-        "Packages/Color Scheme - Default/MagicWB (Amiga).tmTheme", 
-        "Packages/Color Scheme - Default/Monokai Bright.tmTheme", 
-        "Packages/Color Scheme - Default/Monokai.tmTheme", 
-        "Packages/Color Scheme - Default/Pastels on Dark.tmTheme", 
-        "Packages/Color Scheme - Default/Slush & Poppies.tmTheme", 
-        "Packages/Color Scheme - Default/Solarized (Dark).tmTheme", 
-        "Packages/Color Scheme - Default/Solarized (Light).tmTheme", 
-        "Packages/Color Scheme - Default/SpaceCadet.tmTheme", 
-        "Packages/Color Scheme - Default/Sunburst.tmTheme", 
-        "Packages/Color Scheme - Default/Twilight.tmTheme", 
-        "Packages/Color Scheme - Default/Zenburnesque.tmTheme", 
-        "Packages/Color Scheme - Default/iPlastic.tmTheme"
+        {}, // use defaults!
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Amy.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Cobalt.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Dawn.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Eiffel.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Espresso Libre.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/IDLE.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/LAZY.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/MagicWB (Amiga).tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Slush & Poppies.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/SpaceCadet.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Zenburnesque.tmTheme"
+        }, 
+        {
+            "color_scheme": "Packages/Color Scheme - Default/iPlastic.tmTheme"
+        }
     ]
 }
