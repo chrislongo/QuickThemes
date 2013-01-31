@@ -26,16 +26,16 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
             """ There is a mismatch between the selected quicktheme
                 and the current base theme settings. Check to see whether
                 any of the other quickthemes match. """
-            match = false
+            match = False
             for theme in qt_themes:
                 test = qt_defaults
                 test.update(theme)
                 if get_mismatch(test, relevant_settings).len == 0:
-                    match = true
+                    match = True
                     """ Found a match, so update the selection setting. """
                     qt_selection = qt_themes.index(theme)
                     break
-            if match == false:
+            if match is False:
                 """ No match found, so add a new quicktheme to preserve current
                     settings. """
                 qt_themes.append(relevant_settings)
@@ -60,5 +60,5 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
         sublime.save_settings(__name__ + '.sublime-settings')
         sublime.save_settings("Base File.sublime-settings")
 
-        sublime.status_message("QuickThemes: theme index is now " +
-                + str(qt_selection))
+        sublime.status_message("QuickThemes: theme index is now "
+            + str(qt_selection))
