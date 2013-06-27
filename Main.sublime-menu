@@ -56,10 +56,27 @@
                             {
                                 "caption": "Key Bindings \u2013 User", 
                                 "args": {
-                                    "file": "${packages}/User/QuickThemes.sublime-keymap"
+                                    "file": "${packages}/User/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
                                 }, 
                                 "command": "open_file"
-                            }, 
+                            },
+                            {
+                                "caption": "Key Bindings \u2013 User", 
+                                "args": {
+                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                }, 
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "Key Bindings \u2013 User", 
+                                "args": {
+                                    "file": "${packages}/User/Default (Windows).sublime-keymap",
+                                    "platform": "Windows"
+                                }, 
+                                "command": "open_file"
+                            },
                             {
                                 "caption": "-"
                             }
