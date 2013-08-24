@@ -56,6 +56,6 @@ Two modes to harmonize with ambient light:
     * Linux `~/.config/sublime-text-2/Packages/User`
 
 * Run the command:  
-    `git://github.com/chrislongo/QuickThemes.git`
+    `git clone https://github.com/chrislongo/QuickThemes.git`
 
 * Set up your favorite themes to cycle through (see Info section above).
