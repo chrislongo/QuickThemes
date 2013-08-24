@@ -5,13 +5,13 @@ import sublime_plugin
 class QuickThemesCommand(sublime_plugin.WindowCommand):
     def run(self, action):
 
-        qt_settings = sublime.load_settings(__name__ + '.sublime-settings')
+        qt_settings = sublime.load_settings('QuickThemes.sublime-settings')
         full_settings = sublime.load_settings("Base File.sublime-settings")
         relevant_settings = {}
 
         qt_defaults = qt_settings.get("quick_themes_defaults")  # dict
         qt_themes = qt_settings.get("quick_themes")  # list
-        qt_selection = int(qt_settings.get("quick_themes_selection"))  # int
+        qt_selection = int(qt_settings.get("quick_themes_selection", 0))  # int
 
         for option in qt_defaults:
             relevant_settings[option] = full_settings.get(option)
