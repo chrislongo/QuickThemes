@@ -2,6 +2,7 @@ import sublime
 import sublime_plugin
 import re
 
+
 class QuickThemesCommand(sublime_plugin.WindowCommand):
     def theme_name_status_message(self, full_name):
         try:
@@ -31,7 +32,9 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
         for option in qt_defaults:
             relevant_settings[option] = full_settings.get(option)
 
-        mismatch = self.get_mismatch(qt_themes[qt_selection], relevant_settings)
+        mismatch = self.get_mismatch(
+            qt_themes[qt_selection], relevant_settings)
+
         if len(mismatch) > 0:
             """ There is a mismatch between the selected quicktheme
                 and the current base theme settings. Check to see whether
@@ -40,7 +43,7 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
             for theme in qt_themes:
                 test = qt_defaults
                 test.update(theme)
-                if get_mismatch(test, relevant_settings).len == 0:
+                if self.get_mismatch(test, relevant_settings).len == 0:
                     match = True
                     """ Found a match, so update the selection setting. """
                     qt_selection = qt_themes.index(theme)
@@ -72,4 +75,3 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
         sublime.save_settings("Base File.sublime-settings")
 
         self.theme_name_status_message(writeable_settings["color_scheme"])
-
