@@ -6,7 +6,6 @@ import re
 class QuickThemesCommand(sublime_plugin.WindowCommand):
     def theme_name_status_message(self, full_name):
         try:
-            print(full_name)
             match = re.search("([^/]+).tmTheme|.sublime-theme$", full_name)
             theme_name = match.group(1)
 
