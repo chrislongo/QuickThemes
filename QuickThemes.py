@@ -15,9 +15,12 @@ class QuickThemesCommand(sublime_plugin.WindowCommand):
             pass
 
     def get_mismatch(self, a, b):
-            """ Return the difference between two dicts. """
+        """ Return the difference between two dicts. """
+        try:
             diff = set(a).difference(set(b))
             return dict((key, value) for (key, value) in diff)
+        except:
+            return {}
 
     def run(self, action):
         qt_settings = sublime.load_settings('QuickThemes.sublime-settings')
